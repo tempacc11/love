@@ -35,6 +35,9 @@ $(window).resize(function() {
     }
 });
 
+let audio = new Audio('./fold.mp3');
+audio.play();
+
 function getHeartPoint(angle) {
 	var t = angle / Math.PI;
 	var x = 19.5 * (16 * Math.pow(Math.sin(t), 3));
