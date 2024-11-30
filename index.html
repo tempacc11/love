@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one </title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<embed src="./fold.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" />
+
+
+</head>
+
+<body>
+	<!-- <audio src="./fold.mp3" autoplay>
+		<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+		</audio> -->
+
+
+<div id="mainDiv">
+
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Yasi, <br />
+			Do you remember the day we first starting talking?<br />
+			<span class="comments">// We spent weeks only communicating thru reels </span><br />
+			I couldn't get enough of seeing ur pics;<br />
+			<span class="comments">// Then we starting sending eachother song voicenotes.</span><br />
+			
+			
+			<br> We'd have netflix and facetime dates;<br />
+			<br> As the time went on;<br />
+			The Bond grew stronger and stronger;<br />
+			I came to Germany and we hugged and kissed and laughed;<br />
+			<br />
+			<br>Your lips felt like medicine </br>
+			Relationships have up and downs ;<br />
+			
+			<span class="comments">// This is our first big fight.</span><br />
+			But I'm choosing to be 'delulu' and hoping there will be more memories;<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			I miss u;<br />
+			<br>
+			<br>
+			Touch the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a href="image2.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					I MISS YOU SO MUCH
+					
+						
+						<div class="tenor-gif-embed" data-postid="11257448943918201134" data-share-method="host" data-aspect-ratio="1" data-width="50%"><a href="https://tenor.com/view/%D0%B3%D0%BE%D0%B4%D0%B6%D0%BE-gif-11257448943918201134">годжо GIF</a>from <a href="https://tenor.com/search/%D0%B3%D0%BE%D0%B4%D0%B6%D0%BE-gifs">годжо GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>						</div>
+				
+				<div id="loveu">
+					<br/>
+					<div class="signature"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 8, 5);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+
+
+
+</script>
+</body>
+</html>
